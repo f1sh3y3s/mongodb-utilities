@@ -4,8 +4,8 @@
   "description": "mongodb utility scripts",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint *.js",
-    "lint:fix": "eslint  *.js",
+    "lint": "npx eslint **/*.js",
+    "lint:fix": "eslint  --fix **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },

@@ -3,9 +3,6 @@ const _ = require('lodash');
 
 // all mongodb connections
 const clients = {};
-
-const reconnectTries = 3;
-const reconnectInterval = 5000;
 let connectionTimeout;
 
 
@@ -41,9 +38,6 @@ module.exports.init = () => {
 	const mongoInstance = mongoose.createConnection(`${process.env.MONGODB_CONN_STR}`, {
 		useNewUrlParser: true,
 		keepAlive: true,
-		autoReconnect: true,
-		reconnectTries: reconnectTries,
-		reconnectInterval: reconnectInterval,
 	});
 
 	clients.mongoInstance = mongoInstance;
