@@ -1,0 +1,25 @@
+{
+  "name": "mongodb-utilities",
+  "version": "1.0.0",
+  "description": "mongodb utility scripts",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint *.js",
+    "lint:fix": "eslint  *.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-2:f1sh3y3s/mongodb-utilities.git"
+  },
+  "author": "f1sh3y3s",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "mongoose": "^6.3.2"
+  }
+}
